@@ -1,2 +1,6 @@
 ＃Kayden_HuaXin_MybatisPlus
-项目为SpringBoot整合MypatisPlus后端
+此项目为微信小程序开发测试版，主要功能是图片服务器；
+项目后端为SpringBoot整合MypatisPlus搭建；前端部分为原生微信小程序；
+涉及到的技术栈有Nginx、Redis、及并发处理。
+云服务器选用腾讯云服务器，图片通过微信小程序js储存在云服务器的对象储存中；
+
