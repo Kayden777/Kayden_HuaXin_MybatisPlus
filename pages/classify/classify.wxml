@@ -1,0 +1,35 @@
+<!-- 全部分类展示 -->
+<i-card bindtap="jump" i-class="girl" data-text="女生" title="女生头像" extra="" thumb="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/classify/classwoman.png">
+  <view style="font-size: 26rpx;font-weight: bold;"  slot="content">一双漆黑清澈的大眼睛，柔软饱满的红唇</view>
+</i-card>
+
+<view class="fen"></view>
+
+<i-card bindtap="jump" i-class="boy" data-text="男生" title="男生头像" extra="" thumb="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/classify/classman.png">
+  <view style="font-size: 26rpx;font-weight: bold;" slot="content">光洁白皙的脸庞,透着棱角分明的冷俊</view>
+</i-card>
+
+<view class="fen"></view>
+
+<i-card bindtap="jump" i-class="lovers" data-text="情侣" title="情侣头像" extra="" thumb="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/classify/classqinglv.png">
+  <view style="font-size: 26rpx;font-weight: bold;" slot="content">与你相遇，是此生最美的风景</view>
+</i-card>
+
+<view class="fen"></view>
+
+<i-card bindtap="jump" i-class="animation" data-text="动漫" title="动漫头像" extra="" thumb="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/classify/classdongman.png">
+  <view style="font-size: 26rpx;font-weight: bold;" slot="content">来到这个世界上，即使是天使都会做坏事</view>
+</i-card>
+
+<view class="fen"></view>
+
+<i-card bindtap="jump" i-class="scenery" data-text="风景"  title="风景头像" extra="" thumb="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/classify/classfengjing.png">
+  <view style="font-size: 26rpx;font-weight: bold;" slot="content">世界那么大，我想去看看</view>
+</i-card>
+
+<view class="fen"></view>
+
+<!-- 游戏头像没有bindtap="jump"事件 -->
+<!-- <i-card  i-class="game" data-text="游戏"  title="游戏头像挖掘中" extra="" thumb="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/classify/classifygame.png">
+  <view style="font-size: 26rpx;font-weight: bold;" slot="content">这场游戏注定由我来结束</view>
+</i-card> -->

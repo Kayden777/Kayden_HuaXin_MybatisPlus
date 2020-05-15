@@ -1,0 +1,35 @@
+<view class='container' >
+  <block>
+    <view class='text-content' style="display: flex;align-items: center;justify-content: center;">
+      <image bindtap="refreshSork" style="height:45rpx;width:45rpx;" src="../../../icon/sork.png"></image>
+      <text bindtap="refreshSork" style="color:#6A5ACD;">最新排行</text>
+      <!-- 刷新动画-->
+      <i-grid>
+        <i-grid-item i-class="item">
+          <i-spin></i-spin>
+        </i-grid-item>
+      </i-grid>
+      
+    </view>
+  </block>
+ 
+  <block wx:for="{{userSork}}" wx:key="key">
+    <view class='text-content' style="display: flex;align-items: center;">
+      <image wx:if="{{index==0}}" style="height:70rpx;width:70rpx;" src="../../../icon/no1.png"></image>
+       <image wx:if="{{index==1}}" style="height:70rpx;width:70rpx;" src="../../../icon/no2.png"></image>
+       <image wx:if="{{index==2}}" style="height:70rpx;width:70rpx;" src="../../../icon/no3.png"></image>
+       <image wx:if="{{index==3}}" style="height:50rpx;width:50rpx;" src="../../../icon/no4.png"></image>
+       <image wx:if="{{index==4}}" style="height:50rpx;width:50rpx;" src="../../../icon/no5.png"></image>
+       <image wx:if="{{index==5}}" style="height:50rpx;width:50rpx;" src="../../../icon/no6.png"></image>
+       <image wx:if="{{index==6}}" style="height:50rpx;width:50rpx;" src="../../../icon/no7.png"></image>
+       <image wx:if="{{index==7}}" style="height:50rpx;width:50rpx;" src="../../../icon/no8.png"></image>
+       <image wx:if="{{index==8}}" style="height:50rpx;width:50rpx;" src="../../../icon/no9.png"></image>
+       <image wx:if="{{index==9}}" style="height:50rpx;width:50rpx;" src="../../../icon/no10.png"></image>
+      <image style="height:100rpx;width:100rpx;border-radius:50%" src="{{item.useravatarUrl}}"></image>
+      <text class="namestyle">{{item.usernickName}}</text>
+      <text style="position: absolute;right: 2px;">获赞:{{item.sumcount}}</text>
+    </view>
+  </block>
+
+  
+</view>

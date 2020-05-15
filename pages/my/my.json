@@ -1,0 +1,14 @@
+  {
+    "navigationBarTitleText": "个人页面",
+    "usingComponents": {
+      "i-tab-bar": "../../dist/tab-bar/index",
+      "i-tab-bar-item": "../../dist/tab-bar-item/index",
+      "i-card": "../../dist/card/index",
+      "i-cell-group": "../../dist/cell-group/index",
+      "i-cell": "../../dist/cell/index",
+
+      "i-badge": "../../dist/badge/index",
+
+      "mp-badge": "../components/badge/badge"
+    }
+  }

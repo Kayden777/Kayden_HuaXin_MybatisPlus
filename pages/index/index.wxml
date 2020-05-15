@@ -1,0 +1,74 @@
+<!-- 每日活动滚动条 -->
+
+<view>
+  <i-notice-bar icon="message" loop speed="1700" color="red">
+    ''请各位小伙伴关注每日活动，即可领取丰厚礼品！''
+  </i-notice-bar>
+</view>
+
+
+<!-- 活动轮播图片 -->
+<view>
+  <swiper class="swiper-box" indicator-dots="true" indicator-color="" indicator-active-color="" autoplay="true" interval="4000" circular="true" previous-margin='48px' next-margin='48px' bindchange="swiperChange" style='height:{{swiperH}};margin-top:-50rpx;'>
+    <swiper-item wx:for='{{imgList}}' wx:key=''>
+      <navigator url="activity/activity">
+        <image referrer="no-referrer|origin|unsafe-url" class='le-img {{nowIdx==index?"le-active":""}}' bindload='getHeight' src='{{item}}' style='height:{{swiperH}};'></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 今日热点新闻轮播 -->
+<!-- 滚动部分 -->
+<view class='gundong-section'>
+  <image src="../../icon/redian.png"></image>
+  <swiper class="swiperitem" vertical="true" circular="true" duration="500" autoplay="true" interval="2500" easing-function="easeInOutCubic">
+    <block wx:for="{{rollData}}">
+      <swiper-item>
+        <text class="swiper-txt">{{item}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>
+
+<!-- 分类导航栏 -->
+<!-- 滚动 -->
+ <view class="{{scrollTop>200 ? 'topnavFixed' : 'topnavAbsolute'}}">
+  <i-tabs style="" i-class="testfenlei" current="{{ current_scroll }}" scroll bindchange="handleChangeScroll">
+    <i-tab key="全部" title="热门头像"> </i-tab>
+    <i-tab style="margin-left:50rpx;" key="女生" title="女生头像"> </i-tab>
+    <i-tab style="margin-left:50rpx;" key="男生" title="男生头像"> </i-tab>
+    <i-tab style="margin-left:50rpx;" key="情侣" title="情侣头像"> </i-tab>
+    <i-tab style="margin-left:50rpx;" key="动漫" title="动漫头像"> </i-tab>
+    <i-tab style="margin-left:50rpx;" key="风景" title="风景头像"> </i-tab>
+    <!-- <i-tab style="margin-left:50rpx;" key="游戏" title="游戏头像"> </i-tab> -->
+  </i-tabs>
+</view> 
+
+
+
+
+<!-- 每日图片展示 -->
+<!-- 站外图片显示403  pic: "https://images.weserv.nl/?url=",//控制站外访问图片403  src='{{pic}}{{item}}' -->
+<view  class='imgList'>
+  <view wx:if="{{truefalsePicList>1}}" class='imgList-li' wx:for='{{pictureList}}' wx:key="key">
+    <image mode="aspectFill" class='img' src='{{pic}}{{item}}' data-index='{{index}}'  bindtap='previewImg'></image>
+  </view>
+  <!-- 判断是否是站外访问-->
+  
+
+
+  <!-- 如果后台没查到数据，显示空logo -->
+  <view wx:if="{{truefalsePicList<1}}" class="wupic">
+    <image style="height:200rpx;width:200rpx;" src="../../icon/nullpic.png"></image>
+  </view>
+</view>
+
+<!-- 返回顶部 -->
+<scroll-view scroll-y scroll-top='{{topNum}}'>
+  <image src='../../icon/up.png' class='goTop' bindtap="goToTop"></image>
+</scroll-view>
+
+<!-- 底部加载 -->
+<i-divider content="精美的图片正在赶来的路上~"></i-divider>

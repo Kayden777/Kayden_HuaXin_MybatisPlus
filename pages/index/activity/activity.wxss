@@ -1,0 +1,54 @@
+/* pages/index/activity/activity.wxss */
+image{
+  height: 800rpx;
+  width: 80%;
+}
+text{
+  color: white;
+}
+.pages{
+height: 100%;
+width: 100%;
+background-image: url("https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/activity/details-sork/bgd.png"); 
+z-index: -10;
+}
+
+
+.swiperMain {
+    position:relative;
+    height:840rpx;
+}
+.swiperMain .dots{
+    position:fixed;
+    top:780rpx;
+    left:0px;
+    right:0px;
+    text-align: center;
+    z-index: 1;
+}
+.swiperMain .dots view{
+    width:20rpx;
+    height:20rpx;
+    background:rgba(0,0,0,0.4);
+    display: inline-block;
+    margin:0 10rpx;
+    border-radius:20rpx;
+}
+.swiperMain .dots view.active{
+    width:20rpx;
+    height:20rpx;
+    background:rgba(0,0,0,0.8);
+}
+swiper{
+    width:750rpx;
+    height:840rpx;
+    position:fixed;
+}
+.slide-image{
+    width:750rpx;
+    height:840rpx;
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-size:cover;
+}
+

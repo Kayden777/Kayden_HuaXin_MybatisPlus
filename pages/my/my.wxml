@@ -1,0 +1,22 @@
+<view class="cardview">
+  <view>
+    <button hover-class="buttonhover" class="{{buttonclass>1?'showclass':'hiddenclass'}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> <image class="weixin-icon-css" src="../../icon/wexin-icon.png" /> 微信一键登录 </button>
+  </view>
+
+  <image style="height: 200rpx;width: 200rpx; border-radius: 50%; overflow: hidden;" class="{{buttonclass>1?'hiddenclass':'showclass'}}" src="{{userInfo.avatarUrl}}" />
+
+  <view>
+    <view style="color:#FF69B4;margin-right:20rpx;"> <text>{{userInfo.nickName}}</text>  </view>
+    <view style="color:#FF69B4;margin-right:20rpx;"> <text>{{userInfo.province}} {{userInfo.city}}</text> </view>
+    <view style="color:#FF69B4;margin-right:20rpx;"> <text>{{userHXID}}</text> </view>
+  </view>
+</view>
+
+<i-cell-group>
+  <i-cell title="上传图片" bindtap="jumpURL" is-link url="{{uppicURL}}"></i-cell>
+    <i-cell bindtap="redClick" title="我的上传"  is-link url="{{mypicURL}}">
+      <mp-badge  wx:if="{{redMessage>1}}" style="position:absolute;margin-top:-57rpx;left:180rpx;" />
+    </i-cell>
+  <i-cell title="助力好友" bindtap="jumpURL" is-link url="{{helpURL}}"></i-cell>
+  <i-cell title="排行榜" bindtap="jumpURL" is-link url="{{sorkURL}}"></i-cell>
+</i-cell-group>

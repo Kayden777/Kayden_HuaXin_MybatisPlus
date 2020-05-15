@@ -1,0 +1,52 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/index/activity/activity",
+    "pages/my/my",
+    "pages/my/helpfriend/helpfriend",
+    "pages/my/sork/sork",
+    "pages/classify/classify",
+    "pages/classify/classifySon/classifySon",
+    "pages/my/aboutme/aboutme",
+    "pages/my/uploader/uploader"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "花心头像",
+    "navigationBarTextStyle": "black"
+  },
+  "my":{
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#0fb55e",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home-open.png",
+        "pagePath": "pages/index/index",
+        "text": "主 页"
+      },
+      {
+        "iconPath": "icon/pic.png",
+        "selectedIconPath": "icon/pic-open.png",
+        "pagePath": "pages/classify/classify",
+        "text": "全部分类"
+      },
+      {
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my-open.png",
+        "pagePath": "pages/my/my",
+        "text": "我 的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

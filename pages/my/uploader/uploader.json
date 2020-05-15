@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "上传图片",
+  "usingComponents": {
+    "i-tab-bar": "../../dist/tab-bar/index"
+  }
+}

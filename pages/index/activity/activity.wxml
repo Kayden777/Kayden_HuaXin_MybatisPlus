@@ -1,0 +1,35 @@
+<!--pages/index/activity/activity.wxml-->
+<view class="pages">
+  <view style="width:100%;display: flex;flex-direction: column;align-items: center;">
+    <text>互动参与详情</text>
+    <view></view>
+    <text>第一步</text>
+    <image src="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/activity/details-text/1.png"></image>
+    <text>第二步</text>
+    <image src="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/activity/details-text/2.png"></image>
+    <text>第三步</text>
+    <image src="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/activity/details-text/3.png"></image>
+    <text>第四步</text>
+    <image src="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/activity/details-text/4.png"></image>
+    <text>第五步</text>
+    <image src="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/activity/details-text/5.png"></image>
+  </view>
+
+  <view style="width:100%;display: flex;flex-direction: column;align-items: center;">
+    <text>奖品展示</text>
+    <view></view>
+    <text>第一名奖品</text>
+    <view></view>
+    <text>青轴机械键盘(350元)</text>
+    <video src="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/activity/details-sork/%E4%B8%BB%E5%9B%BE%E8%A7%86%E9%A2%91.mp4"></video>
+    <image style="width:80%;height:400rpx;" src="https://kayden-guiyu-1300026157.cos.ap-chengdu.myqcloud.com/activity/details-sork/8.jpg"></image>
+     <view></view>
+    <text style="width:100%;background:white; color:pink;font-size:30rpx;">第二名奖励20元话费(话费到账可能会有延迟)</text>
+    <view></view>
+    <text style="width:100%;background:white; color:pink;font-size:30rpx;">第三名奖励10元话费(话费到账可能会有延迟)</text>
+    <view></view>
+    <text style="width:100%;background:white; color:black;font-size:30rpx;">(注:活动所有解释权归开发者所有)</text>
+  </view>
+
+
+</view>

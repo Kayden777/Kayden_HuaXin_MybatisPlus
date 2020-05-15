@@ -1,0 +1,21 @@
+{
+
+"navigationBarTitleText": "花心图片库",
+
+  "usingComponents": {
+    "i-notice-bar": "../../dist/notice-bar/index",
+    "i-avatar": "../../dist/avatar/index",
+    "i-tab-bar": "../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../dist/tab-bar-item/index",
+
+    "i-sticky": "../../dist/sticky/index",
+    "i-sticky-item": "../../dist/sticky-item/index",
+
+    "i-load-more": "../../dist/load-more/index",
+
+    "i-divider": "../../dist/divider/index",
+
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index"
+  }
+}

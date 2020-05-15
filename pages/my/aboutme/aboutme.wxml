@@ -1,0 +1,20 @@
+<view wx:if="{{errorHtml == 1}}">
+  <view class="father" wx:for="{{userUp}}" wx:for-index="key" wx:for-index="index" wx:for-item="value">
+    <view class="children">
+      <image bindtap='previewImg' data-index='{{index}}' mode="aspectFill" style="height:150rpx;width:150rpx;border-radius: 50px;" src="{{value.uppictureaddress}}"></image>
+    </view>
+    <view class="children">
+      {{value.uploadtime}}
+    </view>
+    <view class="children">
+      获赞数：{{value.likepicturenum}}
+    </view>
+  </view>
+</view>
+
+<view wx:elif="{{errorHtml==0}}">
+  <i-alert type="success" show-icon desc closable bind:close="handleClick">
+    对不起，您还没有上传图片哦
+    <view slot="desc">Sorry, you haven't uploaded the picture yet</view>
+  </i-alert>
+</view>

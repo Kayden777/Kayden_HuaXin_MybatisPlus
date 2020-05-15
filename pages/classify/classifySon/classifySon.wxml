@@ -1,0 +1,27 @@
+<!--pages/classify/classifySon/classifySon.wxml-->
+<!-- 站外图片显示403  pic: "https://images.weserv.nl/?url=",//控制站外访问图片403  src='{{pic}}{{item}}' -->
+<view wx:if="{{isCanShow<1}}" class='imgList'>
+  <view  class='imgList-li' wx:for='{{pictureList}}' wx:key="key">
+    <image mode="aspectFill" class='img' src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+  </view>
+</view>
+
+<view wx:if="{{isCanShow>1}}" class='imgList'>
+  <view  class='imgList-li' wx:for='{{pictureList}}' wx:key="key">
+    <image mode="aspectFill" class='img' src='{{pic}}{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+  </view>
+</view>
+
+
+<i-tab-bar  i-class="paixu-css" fixed="true" current="{{ current }}" bindtap="handleChange">
+  <image wx:if="{{titleshow<1}}" style="height:50rpx;width:50rpx;" src="../../../icon/kuqi.png"></image>
+  <image wx:if="{{titleshow>1}}" style="height:50rpx;width:50rpx;" src="../../../icon/imgdown.png"></image>
+  {{title}}
+</i-tab-bar>
+
+
+
+<!-- 返回顶部 -->
+<scroll-view scroll-y scroll-top='{{topNum}}' bindscroll="scrolltoupper">
+  <image src='../../../icon/up.png' class='goTop' bindtap="goToTop"></image>
+</scroll-view>

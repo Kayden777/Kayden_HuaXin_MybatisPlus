@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-spin": "../../../dist/spin/index",
+    "i-alert": "../../../dist/alert/index"
+  }
+}

@@ -1,0 +1,100 @@
+/* pages/my/helpfriend/helpfriend.wxss */
+
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  background-color: white;
+}
+
+.weui-search-bar__form {
+  display: flex;
+align-items: center;
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+}
+
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 90%;
+  box-sizing: border-box;
+  z-index: 1;
+ 
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  margin-left: 20rpx;
+}
+
+.weui-icon-search_in-box_img {
+  position: absolute;
+  right: 0rpx;
+  top: 20rpx;
+  width:40rpx;
+  height:40rpx;
+  border-radius: 50rpx;
+  background-color: white;
+}
+
+
+/* border-radius: 98rpx;是控制按钮边变圆 */
+.goodbutton {
+  /* margin-top: 30px; */
+  background-color: #FFFFFF;
+  color: rgba(42, 238, 130, 0.767);
+  /* background: bg_red; */
+}
+ 
+/* 按下变颜色 */
+.hover {
+  color:  rgb(7, 163, 77);
+}
+
+/* 图片集合列表 */
+.father{
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 2px  	#A9A9A9;
+border-radius: 50rpx;
+font-size: 30rpx;
+background: -webkit-linear-gradient(top, white, rgb(153, 241, 241), #f0ffff);
+margin-top: 30rpx;
+}
+
+.friend404{
+ display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 200rpx;
+}
+
+
+.friend202{
+  display: block;
+}
+
+.friend202{
+  display: none;
+}
+

@@ -1,0 +1,136 @@
+swiper {
+  padding-top: 30px;
+}
+
+.wupic{
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* 活动轮播点样式 */
+/* swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 2rpx;
+}
+.swiper-box .wx-swiper-dot{
+    width:40rpx; 
+    display: inline-flex;
+    height: 10rpx;
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.swiper-box .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1; 
+    background: #DCDCDC;
+     border-radius: 8rpx; 
+}
+.swiper-box .wx-swiper-dot-active::before{
+    background:#87CEFA;
+} */
+
+
+
+.le-img {
+  width: 100%;
+  display: block;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.le-img.le-active {
+  transform: scale(1);
+}
+
+
+
+/*网上的预览图片*/
+
+.imgList {
+  margin-top: 20rpx;
+}
+
+.imgList .imgList-li {
+  display: inline;
+  margin-left: 70rpx;
+}
+
+/* 图片样式 */
+.imgList .imgList-li .img {
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 2%;
+}
+
+/*固定每日推荐导航栏*/
+
+.topnavFixed {
+  position: fixed;
+  top: 0rpx;
+  z-index: 1;
+}
+.topnavAbsolute {
+  z-index: 0;
+}
+
+
+/* 热点新闻轮播文字 */
+.gundong-section {
+  margin-top: 14rpx;
+  position: relative;
+  overflow: hidden;
+   height: 70rpx; 
+  border-bottom: solid #F5F5F5 1px;
+  border-radius: 50rpx;
+   background: -webkit-linear-gradient(top,  #ADD8E6,  #E0FFFF,#F0FFFF );
+   
+}
+
+.gundong-section image {
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin: 18rpx 0 0 15rpx;
+}
+
+
+.swiperitem {
+   height: 100%;
+  margin-left: 4rem;
+  margin-top: -65rpx; 
+}
+
+.swiperview .wx-swiper-dots {
+  display: none;
+}
+
+/* 热点新闻文字颜色 */
+.swiper-txt {
+  font-size: 30rpx;
+  color: #1296db;
+  float: left;
+  margin: 18rpx 0 0 15rpx;
+  width: 90%;
+  overflow: hidden;
+}
+
+
+/* 标题分类栏 */
+.testfenlei{
+  background-color: white;
+}
+
+
+/* 返回顶部  */
+.goTop{
+  height: 100rpx;
+  width: 100rpx;
+  position: fixed;
+  bottom: 100rpx;
+  background: rgba(0,0,0,.0);
+  right: 30rpx;
+  border-radius: 50%;
+}
+
+

@@ -1,0 +1,37 @@
+<view>
+  <!-- form表单 -->
+  <form bindsubmit="submitClick">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <!-- 搜索框 -->
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="25"></icon>
+          <input value="{{inputValue}}" name="userName" bindblur="" bindfocus="" bindinput='getInputVal' type="text" class="weui-search-bar__input" placeholder="输入好友ID" />
+          <image wx:if="{{deleteImg=='isNull'}}" bindtap="deleteIcon" class="weui-icon-search_in-box_img" src="../../../icon/delete.png"></image>
+        </view>
+      </view>
+      <button style="width: 200rpx;border: 1rpx solid white;" class='goodbutton' hover-class="hover" form-type="submit">搜索</button>
+    </view>
+  </form>
+</view>
+
+<view class="{{ispeoples>1?'friend200':'friend202'}}">
+  <view class="father" wx:for="{{userUp}}" wx:for-index="index" data-index="{{index}}" wx:for-item="value">
+    <view class="children">
+      <image  bindtap='previewImg' data-index='{{index}}'  style="height:150rpx;width:150rpx;border-radius: 50px;" src="{{value.uppictureaddress}}"></image>
+    </view>
+    <view class="children">
+      上传时间: {{value.uploadtime}}
+    </view>
+    <view class="children">
+      点赞
+      <image wx:if="{{likeimgIndex==index}}" bindtap="likeimg" data-index="{{index}}"  style="height:50rpx;width:50rpx;" src="../../../icon/like.png"></image>
+      <image wx:elif="{{likeimgIndex!=index}}" bindtap="likeimg" data-index="{{index}}"  style="height:50rpx;width:50rpx;" src="../../../icon/nolike.png"></image>
+    </view>
+  </view>
+</view> 
+
+<view class="{{ispeoples<1?'friend404':'friend202'}}" >
+    <image mode="widthFix" style="height:80rpx;;width:80rpx;" src="../../../icon/help.png"></image>
+    <text style="color:#A9A9A9;">{{frientext}}</text>
+</view>

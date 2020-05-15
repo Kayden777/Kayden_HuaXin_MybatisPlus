@@ -1,0 +1,39 @@
+/* pages/classify/classifySon/classifySon.wxss */
+/*网上的预览图片*/
+
+.imgList {
+  margin-top: 20rpx;
+}
+
+.imgList .imgList-li {
+  display: inline;
+  margin-left: 70rpx;
+}
+
+/* 图片样式 */
+.imgList .imgList-li .img {
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 2%;
+}
+
+.paixu-css{
+ /* background-color: transparent;   按钮透明 */
+ background:#000000; opacity:0.9;
+ font-size: 20rpx;
+ font-weight: bold;
+ display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* 返回顶部  */
+.goTop{
+  height: 100rpx;
+  width: 100rpx;
+  position: fixed;
+  bottom: 130rpx;
+  background: rgba(0,0,0,.0);
+  right: 30rpx;
+  border-radius: 50%;
+}

@@ -1,0 +1,62 @@
+/* pages/my/my.wxss */
+
+text{
+  font-weight:bold;    /*设置字体加粗*/
+  font-family:"新宋体";   /*设置字体为宋体*/
+  text-decoration:underline;   /*文字排版--下划线*/
+}
+
+.cardview {
+  height: 450rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(top, #f0ffff, rgb(153, 241, 241), #f0ffff);
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+
+/* 用户信息 */
+
+.userimg {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.showclass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0fb55e;
+  color: whitesmoke;
+}
+
+.hiddenclass {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #0fb55e;
+}
+
+/* 微信icon */
+.weixin-icon-css{
+  height: 70rpx;
+  width: 70rpx;
+}
+
+/* 按钮点击样式 */
+.buttonhover{
+  background-color: #4ceb99;
+}
+
+/* 红点提示 */
+.redShow{
+display:block;
+}
+/* 红点提示隐藏 */
+.redHidden{
+display: none;
+}
